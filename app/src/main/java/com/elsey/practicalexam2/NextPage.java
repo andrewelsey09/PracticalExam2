@@ -34,7 +34,7 @@ public class NextPage extends AppCompatActivity {
             while ((c=reader.read()) != -1){
                 temp = temp + (char)c;
             }
-            String[] list = temp.split(".");
+            String[] list = temp.split("/");
             try {
                 ((TextView) (findViewById(R.id.textView5))).setText(list[0]);
                 ((TextView) (findViewById(R.id.textView7))).setText(list[1]);
@@ -49,7 +49,7 @@ public class NextPage extends AppCompatActivity {
         }
     }
 
-    public void send(View v){
+    public void send(View v) throws IOException {
         Toast.makeText(this,"Request sent", Toast.LENGTH_LONG).show();
 
     }

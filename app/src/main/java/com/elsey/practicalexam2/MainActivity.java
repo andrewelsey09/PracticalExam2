@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
             if (cb7.isChecked()){
                 writer.write((cb7.getText().toString()).getBytes());
             }
-            writer.write((".").getBytes());
+            writer.write(("/").getBytes());
 
             writer.write((et1.getText().toString()).getBytes());
 
