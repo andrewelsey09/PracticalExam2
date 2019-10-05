@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (FileNotFoundException e){
             Log.d("error","file not found");
         } catch (IOException e){
-            Log.d("error","IO Error...");
+            Log.d("error","IO Error");
         } finally{
             try {
                 writer.close();
